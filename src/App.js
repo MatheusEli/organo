@@ -1,13 +1,13 @@
-import Banner from './components/Banner/Banner'
-import CampoTexto from './components/CampoTexto';
+import Banner from "./components/Banner";
+import Formulario from './components/Formulario';
 
-function App(){
-    return ( 
-    <div className='App'>
-        <Banner />
-        <CampoTexto />
+function App() {
+  return (
+    <div className="App">
+      <Banner />
+      <Formulario />
     </div>
-    )
+  );
 }
 
 export default App;

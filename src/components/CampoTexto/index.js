@@ -1,8 +1,9 @@
-const CampoTexto = () => {
+import './index.css';
+const CampoTexto = ({label, placeholder}) => {
     return (
-        <div>
-            <label>Nome</label>
-            <input />
+        <div className='campo-texto'>
+            <label htmlFor='nome'>{label}</label>
+            <input id="nome" placeholder={placeholder} />
         </div>
     )
 }
