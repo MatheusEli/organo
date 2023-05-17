@@ -19,6 +19,7 @@ const Formulario = ({ aoColaboradorCadastrado, aoNovoTimeAdicionado, times }) =>
 
     aoColaboradorCadastrado({
       id: uuidv4(),
+      favorito: false,
       nome,
       cargo,
       imagem,

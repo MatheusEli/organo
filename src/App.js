@@ -72,6 +72,19 @@ function App() {
       setTimes(timesFiltered);
   };
 
+  const aoFavoritar = (id) => {
+    const newColaboradores = colaboradores.map(membro => {
+      if(membro.id === id){
+        membro.favorito = !membro.favorito;
+      }
+
+      return membro;
+    });
+
+
+    setColaboradores(newColaboradores);
+  };
+
   return (
     <div className="App">
       <Banner />
@@ -92,6 +105,7 @@ function App() {
             cor={time.cor}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
             aoDeletar={deletarColaborador}
+            aoFavoritar={aoFavoritar}
             aoMudarCor={mudarCorTime}
           />
         );
